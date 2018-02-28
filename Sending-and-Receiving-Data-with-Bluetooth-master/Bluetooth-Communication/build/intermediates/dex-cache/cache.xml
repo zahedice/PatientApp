@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.2.1_2b260efb4be2db125e2bd3f02e32e00f6315651e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_62e280b6033a800da0f82f32b09508200e450d35.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-24.2.1_977e5d8a2ed96a5f53492e7350a3c6718871d4cd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.2.1_5f9ff88b70f8ec3d1ab68d5f4a538ef1ae51aed5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-24.2.1_a991929d078033e3035e40041507487ed55dc285.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-24.2.1_641f27ef206a0ed88e8ec550c51f3c406dfa0a1b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_1e522a81cb2088a3c248ac13b8c885ac3895f3ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_eaedc1940cd98f6aa896e7d81480b999276efe5c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.1_e42e09a23c1f69d85e618bad36b7bd4b50fdb64c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zahedur/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/pre-dexed/debug/support-annotations-24.2.1_834cdf6e087e958aa1f7ce535388a432748b4047.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_f509177ef9e125a997e211939c01841ee2abcfca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.2.1_6d4a6c6f564ab755aeafc9bbad5ae0cbba83566e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.2.1_276fbaefaaa4fc71c904f9a454ea6182cb1b6a4d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_393817f6d5eaf0346b9d77563930a5890ee6ff13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.1"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/home/zahedur/Sending-and-Receiving-Data-with-Bluetooth-master/Bluetooth-Communication/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-24.2.1_883fef9ffaffde1ccdd1b360aaee3f479d955d85.jar" />
+    </item>
+
+</items>
