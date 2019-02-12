@@ -1,0 +1,94 @@
+{
+  "project_info": {
+    "project_number": "1071910006076",
+    "firebase_url": "https://notificationtopatient.firebaseio.com",
+    "project_id": "notificationtopatient",
+    "storage_bucket": "notificationtopatient.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071910006076:android:b43db596cefd00aa",
+        "android_client_info": {
+          "package_name": "com.example.zahedur.notificationchannel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071910006076-6v7oe32226itv2ef8ljk3gftc4sivnvu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxwjHWqQirqvsu5dLLblvfmvioJgqBMtU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071910006076:android:d299ab0cda162425",
+        "android_client_info": {
+          "package_name": "com.example.zahedur.tuntuninews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071910006076-milslc2t4u5246k1irpgqg45kg7dm4rj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zahedur.tuntuninews",
+            "certificate_hash": "809d355e42ab63e2297848e13739e1a6300a0dfe"
+          }
+        },
+        {
+          "client_id": "1071910006076-8gtqg7mlcugc4ptg0do21dar0rthfl4m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zahedur.tuntuninews",
+            "certificate_hash": "94b26f8c37a11c4957700df19b60736916ecbaff"
+          }
+        },
+        {
+          "client_id": "1071910006076-6v7oe32226itv2ef8ljk3gftc4sivnvu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxwjHWqQirqvsu5dLLblvfmvioJgqBMtU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071910006076-6v7oe32226itv2ef8ljk3gftc4sivnvu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
