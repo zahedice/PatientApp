@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_bright"
+    tools:context="com.example.zahedur.tuntuninews.MainActivity">
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/addingnewnews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload the Patient Health Status"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"/>
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/messageToDoctors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Message to the Doctor"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"/>
+<Button
+        android:layout_margin="10dp"
+        android:id="@+id/previous_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Previous Messages"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"/>
+
+
+</LinearLayout>
