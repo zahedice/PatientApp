@@ -7,11 +7,13 @@
     android:orientation="vertical"
     tools:context="com.example.zahedur.tuntuninews.Show_Previoud_Message_Activity">
 
-    <TextView
-        android:id="@+id/show_message"
+    <ListView
+        android:id="@+id/messageList"
+        android:listSelector="#167f90"
+        android:dividerHeight="5dp"
+        android:divider="@color/colorPrimary"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/btn_logut_bg"/>
+        android:layout_height="wrap_content"></ListView>
 
 
 

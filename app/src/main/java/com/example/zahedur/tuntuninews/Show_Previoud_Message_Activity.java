@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.android.volley.Request;
@@ -16,91 +18,102 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
 public class Show_Previoud_Message_Activity extends AppCompatActivity {
 
-
-
-    TextView mTextView;
-
-    Button submit;
     public SessionManager session;
 
     RequestQueue requestQueue;
+    ListView mTextView;
 
-    String  url = "https://zahedice14.000webhostapp.com/api/gettingmessage.php";
+    public static final String message = "name";
+    public static final String date = "date";
+    public static final String JSON_ARRAY = "result";
+    // private JSONArray result;
+    private JSONArray result1;
+    //Spinner spinner1,spinner2;
+    //private ArrayList<String> arrayList;
+    private ArrayList<String> arrayList1;
+
+
+    String  url = "https://zahedice14.000webhostapp.com/PatientDataStore/MessageRetrievalFromDatabase.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show__previoud__message_);
 
-        mTextView = (TextView)findViewById(R.id.show_message);
-
-
-        mTextView.setText("");
-        mTextView.setMovementMethod(new ScrollingMovementMethod());
-
+        mTextView = (ListView)findViewById(R.id.messageList);
+        arrayList1 = new ArrayList<String>();
         ActionBar actionBar = getSupportActionBar(); // or getActionBar();
         getSupportActionBar().setTitle(LoginActivity.username); // set the top title
 
-         //Initialize a new RequestQueue instance
-        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
 
-
-        // Initialize a new JsonArrayRequest instance
-        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST,url, new Response.Listener<String>() {
             @Override
-            public void onResponse(JSONArray response) {
-                // Do something with response
-                //mTextView.setText(response.toString());
-
-                // Process the JSON
-                try{
-                    // Loop through the array elements
-                    for(int i=0;i<response.length();i++){
-                        // Get current json object
-                        JSONObject student = response.getJSONObject(i);
-
-                        // Get the current student (json object) data
-                        String firstName = student.getString("name");
-                        String lastName = student.getString("message");
-                        String age = student.getString("date");
-
-                        // Display the formatted json data in text view
-                        mTextView.append(firstName +" " + age +"\nAge : " + lastName);
-                        mTextView.append("\n\n");
-                    }
-                }catch (JSONException e){
+            public void onResponse(String response) {
+                JSONObject j = null;
+                try {
+                    j = new JSONObject(response);
+                    result1= j.getJSONArray(JSON_ARRAY);
+                    doctorname(result1);
+                } catch (JSONException e) {
                     e.printStackTrace();
                 }
             }
         },
-                new Response.ErrorListener(){
+                new Response.ErrorListener() {
                     @Override
-                    public void onErrorResponse(VolleyError error){
-                        // Do something when error occurred
-                        VolleyLog.d("Volley Log",error);
+                    public void onErrorResponse(VolleyError error) {
                     }
-                }
-        );
+                })
+        {
 
-        // Add JsonArrayRequest to the RequestQueue
-        requestQueue.add(jsonArrayRequest);
+            @Override
+            protected Map<String, String> getParams() {
+                // Posting params to register url
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("username", LoginActivity.username);
+                return params;
+            }
+        };
+        requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(stringRequest);
+
         session = new SessionManager(getApplicationContext());
 
         if (!session.isLoggedIn()) {
             logoutUser();
 
         }
-
-
     }
+
+            String temp1,temp2;
+private void doctorname(JSONArray j) {
+    arrayList1.clear();
+    for (int i = 0; i < j.length(); i++) {
+        try {
+            JSONObject json = j.getJSONObject(i);
+            temp1 = json.getString(message);
+            temp2 = json.getString(date);
+            arrayList1.add("Date: " + temp2 + "\n" + "Message: " + temp1);
+            //arrayList1.add(json.getString(message));
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        mTextView.setAdapter(new ArrayAdapter(getApplicationContext(), R.layout.messagetextview, R.id.textviewforlist1, arrayList1));
+    }
+}
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.manubar, menu);

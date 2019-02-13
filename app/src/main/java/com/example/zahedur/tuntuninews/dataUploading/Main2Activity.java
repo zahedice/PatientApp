@@ -41,10 +41,11 @@ import com.example.zahedur.tuntuninews.SessionManager;
 
 public class Main2Activity extends AppCompatActivity {
 
-    TextView txtString, txtStringLength, sensorView0, sensorView1;
+    TextView txtString, txtStringLength, sensorView0,sensorText, sensorView1;
     Handler bluetoothIn;
 
-    final int handlerState = 0;                        //used to identify handler message
+    final int handlerState = 0;                        //used to ide
+    // ntify handler message
     private BluetoothAdapter btAdapter = null;
     private BluetoothSocket btSocket = null;
     private StringBuilder recDataString = new StringBuilder();
@@ -58,6 +59,8 @@ public class Main2Activity extends AppCompatActivity {
     private static String address;
     public SessionManager session;
     String username=LoginActivity.username;
+     String  indicateText;
+     String sensor0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,6 +74,7 @@ public class Main2Activity extends AppCompatActivity {
         txtString = (TextView) findViewById(R.id.txtString);
         txtStringLength = (TextView) findViewById(R.id.testView1);
         sensorView0 = (TextView) findViewById(R.id.sensorView0);
+        //sensorText = (TextView) findViewById(R.id.sensorText);
        // sensorView1 = (TextView) findViewById(R.id.sensorView1);
 
        // String _date = java.text.DateFormat.getDateTimeInstance().format(Calendar.getInstance().getTime());
@@ -89,14 +93,18 @@ public class Main2Activity extends AppCompatActivity {
                     txtStringLength.setText("String Length = " + String.valueOf(dataLength));
 
                     //if it starts with # we know it is what we are looking for
-                    final String indicateText = recDataString.substring(1, 1);
-                    final String sensor0 = recDataString.substring(1, endOfLineIndex);
-                    if (recDataString.charAt(0) == '#') {
-                        sensorView0.setText(" Temperature = " + sensor0 + " C");
+                    indicateText = recDataString.substring(0, 1);
+                        sensor0= recDataString.substring(1, endOfLineIndex);
+                    if (recDataString.charAt(0) == '*') {
+                        sensorView0.setText( sensor0 + " BPM");
+
+
                     }   //update the textviews with sensor values
-                    else if (recDataString.charAt(0) == '*') {
-                        sensorView0.setText(" HeartBeat = " + sensor0 + " BPM");
+                     if (recDataString.charAt(0) == '#') {
+                        sensorView0.setText(sensor0 + " C");
+                        // Toast.makeText(getBaseContext(),sensor0, Toast.LENGTH_LONG).show();
                     }
+
 
                     String url = "http://zahedice14.000webhostapp.com/PatientDataStore/dataStore.php";
                     StringRequest sq = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
@@ -119,12 +127,13 @@ public class Main2Activity extends AppCompatActivity {
                             parr.put("username",username);
                             parr.put("indicatorText",indicateText );
                             parr.put("sensorValue", sensorView0.getText().toString());
-                            return parr; 
+                            return parr;
 
                         }
 
                     };
 
+                      //  Toast.makeText(getBaseContext(),sensorView0.getText().toString(), Toast.LENGTH_LONG).show();
                     AppController.getInstance().addToRequestQueue(sq);
                     // Toast.makeText(getApplicationContext(),"Patient Information is added to website successfully",Toast.LENGTH_LONG).show();
                     recDataString.delete(0, recDataString.length());                    //clear all string data

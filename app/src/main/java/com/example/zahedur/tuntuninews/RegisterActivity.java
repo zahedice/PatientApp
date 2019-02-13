@@ -80,8 +80,8 @@ public class RegisterActivity extends AppCompatActivity{
 
        // SharedPrefManager sharedPrefManager = new SharedPrefManager.getInstance(Context context);
        token = SharedPrefManager.getInstance(this).getDeviceToken();
-        Log.e("MYTAG11", token);
-        Toast.makeText(getApplicationContext(), token, Toast.LENGTH_LONG).show();
+      //  Log.e("MYTAG11", token);
+       // Toast.makeText(getApplicationContext(), token, Toast.LENGTH_LONG).show();
 
 
         // registration token
